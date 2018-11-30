@@ -1,0 +1,6 @@
+﻿{
+    "name": "Ma première extension",
+    "version": "1.0",
+    "description": "Premier projet de création d'une extension Chrome",
+    "manifest_version": 2
+}

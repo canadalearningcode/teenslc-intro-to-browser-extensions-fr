@@ -1,0 +1,41 @@
+# Points à aborder pendant la rencontre avec les mentors
+
+*Animation : Formatrice*
+*Durée : 10 minutes*
+
+## Introductions (5 minutes)
+* Présentez-vous
+* Posez ces questions aux mentors :
+  * Quel est votre nom?
+  * Comment avez-vous entendu parler de Canada en programmation?
+  * Si vous avez du temps : Quelle est votre dernière obsession, ou quelles sont vos passions?
+
+## Aperçu de l'expérience (3 minutes)
+* Brève description de l'atelier
+  * Nous créerons des extensions Chrome en JavaScript, plus particulièrement, une extension remplaçant les images et le style d'une page web. (Exemple de projet : chatons sur le web!)
+* Objectifs de l'atelier
+  * Apprentissage ludique et convivial pour les débutantes
+  * Accent mis sur la possibilité de changer son expérience et l'expérience des autres sur Internet
+  * Sensibilisation à la confidentialité sur le web : développer la pensée critique quant aux logiciels et extensions installés et utilisés sur leurs appareils
+  * « Réussite » au début de l'atelier, juste avant les détails sur le JavaScript, afin d'encourager les apprenantes à persévérer! Faisons l'extension d'abord et voyons l'intérieur plus tard
+  * Encore plus de collaboration qu'avant! Facilitez les liens et les discussions entre les apprenantes
+* Description de la structure de l'atelier
+  * Introduction
+  * Pleins feux sur les extensions de navigateur
+  * Programmation en groupe + exercices (au cours de l'atelier)
+  * Dîner
+  * Pleins feux sur le JavaScript
+  * Exercices + séance de travail
+  * Prolongement (exercices supplémentaires, si le temps le permet)
+  * Démos + conclusion
+* En cas d'imprévu
+  * Les notes se trouvent dans le dossier des diapositives, s'il n'y a pas de connexion Wi-Fi
+  * Si l'atelier est hors ligne, nous appliquerons l'extension aux sites des dossiers horsligne1 et horsligne2 et utiliserons les images du dossier imagesHorsligne en guise de rempladement.
+
+## Assigner les tâches (2 minutes)
+* Configuration du local (au besoin)
+* Accueillez les apprenantes :
+  * Présentez-vous!
+  * Branchez-vous à Internet
+  * Téléchargez les fichiers d'apprentissage (dans la première diapositive) --> Par exemple, dites : « Salut, je m'appelle ____, avez-vous téléchargé les fichiers? »
+  * Parlez aux apprenantes pendant l'attente, pour créer des liens
