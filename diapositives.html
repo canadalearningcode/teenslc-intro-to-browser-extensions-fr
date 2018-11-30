@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S'occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de progression : définissez la durée de la présentation en minutes avec « data-duration ». -->
+<body class="en" data-duration="360">
+
+  <main>
+
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Création d'extensions de navigateur :<br>
+        Piratons la planète!</span>
+      </h1>
+
+      <!-- ENTREZ LES INFORMATIONS SUR LA FORMATRICE -->
+      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
+      <h2><span class="cursive">avec</span> Nom de la formatrice</h2>
+      <ul>
+        <li><a href="mailto:">allo@email.com</a></li>
+        <li><a href="http://website.com">monsite.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <div class="sponsor">
+        <p>En partenariat avec<br><img src="framework/img/telus-logo-white.svg" alt="Telus"><br><img src="framework/img/logo-accenture.svg" alt="Accenture"></p>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a href="http://twitter.com/wolfewylie">William Wolfe-Wylie</a> pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite  <span class="arrow">&#8594;</span> de votre clavier pour naviguer</p>
+      </footer>
+    </section>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Bienvenue!</h1>
+
+      <div class="instructions">
+        <!-- AJOUTEZ LES INFORMATIONS SUR LE WI-FI ICI -->
+        <h2>Branchez-<br>vous</h2>
+        <p><strong>Wi-Fi :</strong> nom du réseau Wi-Fi</p>
+        <p><strong>Mot de passe :</strong> mot de passe du Wi-Fi</p>
+        <hr>
+
+        <h2>Téléchargez<br> et installez</h2>
+        <ol class="downloads">
+          <li>Fichiers d'apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/llc-intro-to-browser-extensions-fr/archive/master.zip">http://bit.ly/llc-browser-extensions-fr</a>
+            <ul>
+              <li>dézippez le dossier d'apprentissage (<em>Tout extraire</em> sur un PC)</li>
+              <li>ouvrez <em>diapositives.html</em> dans le navigateur pour voir les diapositives</li>
+            </ul>
+          </li>
+          <li>Éditeur Atom : <a href="http://atom.io">http://atom.io</a></li>
+          <li>Navigateur Chrome : <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+        </ol>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a href="http://twitter.com/wolfewylie">William Wolfe-Wylie</a> pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite  <span class="arrow">&#8594;</span> de votre clavier pour naviguer les diapositives...</p>
+      </footer>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Introductions
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le code des programmeuses
+
+        1. Soyez enthousiastes et accueillantes
+        1. Respectez les autres en choisissant bien vos mots et vos actions
+        1. Respectez l'espace des autres pendant les discussions
+        1. Posez des questions
+        1. Faites de votre mieux (et amusez-vous!)
+
+      </script>
+    </section>
+
+     <section class="slide" data-markdown>
+        <script type="text/template">
+          # Le thème de février est…
+          ## L’ACCESSIBILITÉ
+
+          Nous imaginons un avenir inclusif, pour toute la population du Canada. Comment l’enseignement et la technologie peuvent-ils être plus inclusifs? Allons au-delà du présent et trouvons des solutions créatives et imaginatives!
+
+          <strong>Participez au thème de ce mois-ci en… </strong>créant une extension qui rendra le Web accessible à tous (p. ex., aux personnes daltoniennes ou ayant un handicap visuel).
+
+          <strong>Partagez vos idées sur le thème de ce mois-ci! <a href="https://www.canadalearningcode.ca/monthly-themes/">Cliquez ici</a> pour en savoir plus.
+
+
+          <hr>
+          ###Ressources supplémentaires
+          ###Jetez un coup d’oeil à cette extension qui améliore la visibilité en inversant les couleurs à l’écran : https://twitter.com/timarney/status/1043196007977234432
+
+        </script>
+      </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Bienvenue!
+
+      ##À l'ordre du jour
+
+      <div class="table-of-contents"></div>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Qu'est-ce qu'une extension de navigateur?
+
+        Les extensions de navigateur sont de petits ensembles de code rendant notre expérience de navigation amusante, pratique, confidentielle ou publique, selon le cas.
+
+        ![](framework/img/workshop/extensionExamples.png)
+
+        Habituellement, elles sont représentées par des boutons dans la barre supérieure du navigateur web. Elles servent à ajouter des fonctionnalités supplémentaires au navigateur, c'est-à-dire, des caractéristiques qui ne sont pas comprises par défaut dans le programme.
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Briser la glace
+
+        ##Nommez-vous, et dites-nous quelle est votre extension de navigateur préférée (si possible)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Qu'est-ce qu'une extension de navigateur?
+
+        En d'autres mots, les extensions sont des programmes permettant à notre navigateur de faire presque tout.
+
+        ##Outils :
+
+        * <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en-US">Bloqueur de publicités</a>
+        * <a href="https://chrome.google.com/webstore/detail/countdown/fefdcjabloofphhfcinhfbinmehfcojm?hl=en-US">Minuterie</a>
+        * <a href="https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en-US">Gestionnaire de mots de passe</a>
+        * <a href="https://chrome.google.com/webstore/detail/facebook-blocker/pjaajgndmkdhodnaeeflmchheijfjnhf?hl=en-US">Bloqueur de Facebook</a>
+
+        ##Extensions amusantes :
+
+        * <a href="https://chrome.google.com/webstore/detail/giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi?hl=en-US">Giphy</a>
+        * <a href="https://chrome.google.com/webstore/detail/bubble-shooter-html5/pfaogkfljpdfmodbmbogiiblppijleen?hl=en-US">Jeux</a>
+        * <a href="https://chrome.google.com/webstore/detail/ears-bass-boost-eq-any-au/nfdfiepdkbnoanddpianalelglmfooik?hl=en-US">Égalisateur</a>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #L'ordre du jour
+
+        Aujourd'hui, nous allons créer une extension de navigateur amusante. D'abord, nous regarderons comment les pages web sont construites et les modifierons.
+
+        Nous sommes tous d'accord : Internet a désespérément besoin de plus de photos de chats! Nous allons donc créer une extension qui remplacera toutes les images sur Internet par des photos de chats (ou d'un autre animal, au choix). Le produit final ressemblera à ceci : <!-- .element: class="delayed" -->
+
+        ![](framework/img/workshop/sample_page.png)<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #Préparer Chrome
+
+        Comme nous travaillerons dans Chrome, il est important de préparer le navigateur afin qu'il nous considère comme des développeuses logiciels (parce que nous en sommes!)
+
+        ![](framework/img/workshop/got_this.gif)
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #Gestionnaire d'extensions
+
+        ![](framework/img/workshop/chrome_extension_location_fr.png)
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Activer le mode développeur
+
+        ![](framework/img/workshop/chrome_developer_mode_fr.png)
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #Chargement!
+
+        Cliquez sur « chargez l'extension non empaquetée » pour commencer.
+
+        ![](framework/img/workshop/chrome_load_unpacked_fr.png)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #La solution est dans le dossier
+
+        Quand vous ajoutez une extension non empaquetée à Chrome, n'oubliez pas de sélectionner TOUT le dossier, pas seulement un fichier.
+
+        Lorsqu'une nouvelle extension non empaquetée est ajoutée à Chrome, le navigateur cherche le fichier « manifest » pour en lire le contenu et savoir quelles actions faire.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Un instant... qu'est-ce que le code?
+
+        Généralement, ce qu'on appelle du « code » est un ensemble de consignes disant à l'ordinateur quoi faire. Le code est donc une série de commandes que l'ordinateur sait comment exécuter.
+
+        Puisqu'il y a de nombreux langages de programmation, il y a donc différents types de « code ». Toutefois, ces langages ont des concepts très similaires et sont conçus pour accomplir des tâches particulières.
+
+        Dans notre cas, nous utiliserons le JavaScript, un langage commun à tous les navigateurs. Les programmes pour le web sont généralement créés en JavaScript.
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Maintenant, les fichiers
+
+        Les bases d'une extension de navigateur sont très simples. Nous n'avons besoin que d'un dossier d'images et d'un fichier manifest.json.
+
+        ![](framework/img/workshop/first_files.png)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        # Le fichier « manifest »
+
+        Le fichier « manifest » nous sera indispensable pendant cet atelier. Il s'agit du noyau de l'extension, de ses actions et de son état. Le « manifest » contient le titre, la description, les icônes et les détails de l'extension. De plus, il sert à demander aux utilisateurs l'autorisation de poser des actions précises pour modifier le comportement des pages web.
+
+        Il y a déjà un fichier « manifest » de base dans le dossier d'exercices pour la première extension. Ouvrez-le pour en connaître le contenu.
+      </script>
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice (5-10 minutes)
+
+        Puisque Chrome regarde le contenu du fichier « manifest » en premier lieu, il va de soi que nous regardions d'abord le fichier « manifest », nous aussi. Prenez quelques instants pour en découvrir le contenu.
+
+        Essayez de changer le nom de l'extension, le numéro de version et la description. À noter que les fichiers .json, comme le « manifest », n'acceptent pas toujours les caractères spéciaux (p. ex. : certains accents en français). Il est donc possible que Chrome affiche une erreur si votre fichier en contient. Vous n'avez qu'à les effacer du fichier « manifest », le cas échéant.
+
+        ---
+        ###Remarque
+
+        Chaque fois que vous modifiez le code du fichier, cliquez sur « Mettre à jour » dans Chrome.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Changer l'icône de l'extension
+
+        Comme nous le savons, les logiciels ont des icônes. Nous cliquons sur une quantité innombrable d'icônes tous les jours, car il s'agit d'un comportement par défaut de tous les ordinateurs. Les extensions, aussi, ont des icônes.
+
+        Habituellement, les icônes ont un sens : le bouclier nous protège, la serrure sert à protéger nos mots de passe et les chatons nous rendent heureux.
+
+        Ajoutons une icône à notre extension. Pour y parvenir, modifiez le fichier « manifest » pour y ajouter le paramètre « icons » :
+
+        ```javascript
+{
+  "name": "Exemple pour bien démarrer",
+  "version": "2.0",
+  "description": "Premier projet de création d'une nouvelle extension Chrome",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  }
+}
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Modifier l'icône
+
+        Comme notre extension sera utilisée sur différents appareils, il est essentiel de fournir des icônes de différentes tailles.
+
+        Indice : vous trouverez des exemples d'icônes à utiliser dans le dossier du projet. Si vous savez comment créer des images à l'aide de logiciels comme Photoshop, vous avez aussi le choix de faire vos propres icônes.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Erreurs, et comment les corriger
+
+        Parfois, il est possible que vous obteniez des erreurs en mettant à jour votre extension. Par exemple :
+
+        ![](framework/img/workshop/extension_load_error_fr.png)
+
+        Bonne nouvelle : les erreurs sont faciles à corriger. Le navigateur vous donne le numéro de la ligne, la colonne (la position du caractère où il y a une erreur) et le nom du fichier. Quand vous avez fini de les corriger, cliquez sur « réessayer » pour charger l'extension une autre fois.
+      </script>
+    </section>
+
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Merci, bonsoir!
+
+        Bravo, vous avez créé une extension!
+
+        ![](framework/img/workshop/thatsall.gif)
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        ![](framework/img/workshop/kidding.gif)
+
+        C'est une blague! En fait, nous avons terminé ce que l'on appelle un « Hello, world », c'est-à-dire, un premier jet comprenant toutes les fondations pour la suite. Maintenant, nous allons bâtir le tout à partir de ces fondations.
+
+        La prochaine étape est de donner une fonction à l'extension.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ajouter un bouton
+
+        La plupart des gens reconnaissent et activent les extensions par leur bouton. Les boutons entraînent des actions.
+
+        L'apparence du bouton et sa fonction sont décrites dans le « manifest », comme ceci :
+
+        ```javascript
+"page_action": {
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+}
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown data-toc>
+      <script type="text/template">
+        #Appuyer sur le bouton
+
+        ![](framework/img/workshop/pressbutton.gif)
+
+        On aime les boutons. Pourquoi ne pas donner une fonction à notre bouton?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # D'abord, nous avons besoin d'une autorisation
+
+        Nous prenons beaucoup de risques sur Internet. En créant des extensions, il est important d'obtenir les autorisations adéquates pour exécuter notre code dans le navigateur d'autres personnes.
+
+        Les autorisations sont contenues dans le fichier « manifest ».
+
+        ```javascript
+        "permissions": ["activeTab", "declarativeContent"],
+        ```
+
+        Le « declarativeContent », ou contenu déclaratif, est l'autorisation nécessaire pour activer le bouton et lui permettre de faire quelque chose dans le navigateur.
+
+        Cette autorisation permet à notre extension d'accéder à l'onglet actif, de le modifier, de le gérer ou de le fermer. En limitant la portée de l'extension à l'onglet actif, nous réduisons volontairement le potentiel du script en l'empêchant d'afficher les autres onglets. En plus de simplifier notre script, cette option donne l'impression à l'utilisateur que notre extension ne souhaite pas accéder à toutes les informations de son navigateur. Ainsi, l'utilisateur fera confiance à l'extension.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Demander l'autorisation (en équipe!)
+
+        Afin d'être exécutée, une extension de Chrome doit en avoir l'autorisation. Cette autorisation change selon les actions de l'extension et ce que l'utilisateur doit autoriser.
+
+        Prenez **10 minutes** pour regarder des exemples de fichiers manifest.json compris dans d'autres extensions Chrome et déterminer quelles autorisations sont nécessaires.
+
+        <a href="https://github.com/panicsteve/cloud-to-butt/blob/master/Source/manifest.json">Cloud to butt</a>
+
+        <a href="https://github.com/alexadam/save-as-ebook/blob/master/web-extension/manifest.json">Save as ebook</a>
+
+        <a href="https://github.com/google/tamperchrome/blob/master/extension/manifest.json">Tamperchrome</a>
+
+        <a href="https://github.com/th3crack3n/giphy-extension/blob/master/manifest.json">Giphy</a>
+
+        À quoi servent ces autorisations, à votre avis? (Indice : vous trouverez une liste d'autorisations <a href="https://developer.chrome.com/extensions/declare_permissions">ici</a>, en anglais.)
+
+
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ensuite : le script!
+
+        Le script est la liste de commandes qui s'exécuteront dans le navigateur après avoir cliqué sur le bouton. Le « manifest » sert à les relier très clairement.
+
+        Le code pour faire référence à un fichier script ressemble à ceci :
+
+        ```javascript
+        "background": {
+          "scripts": ["script.js"],
+          "persistent": false
+        }
+
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Vérification
+
+        Voici ce à quoi le fichier « manifest » devrait ressembler :
+
+        ```javascript
+{
+    "name": "Ma première extension",
+    "version": "1.0",
+    "description": "Premier projet de création d'une nouvelle extension Chrome",
+    "manifest_version": 2,
+    "permissions": ["activeTab", "declarativeContent"],
+    "icons": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    },
+    "page_action": {
+      "default_icon": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+      }
+    },
+    "background": {
+      "scripts": ["script.js"],
+      "persistent": false
+    }
+}
+      ```
+
+      </script>
+    </section>
+
+    <section class="slide nested-list" data-markdown>
+      <script type="text/template">
+        #Le script
+
+        Nous avons ajouté une référence à script.js dans le fichier « manifest ».
+
+        Une partie de ce fichier script.js se trouve dans les fichiers d'apprentissage. Au début du fichier, il y a une fonction activant le bouton de l'extension dans Chrome et nous permettant de le cliquer.
+
+        Mais qu'arrive-t-il si nous le cliquons?
+
+        (Attention : Les prochaines étapes seront compliquées, mais nous nous amuserons encore bientôt.)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ajouter une action au bouton
+
+        Nous en sommes à l'aspect le plus important : faire en sorte que le script écoute les commandes du bouton.
+
+        **Dans le fichier script.js**, sous la fonction déjà présente, ajoutez :
+
+        ```javascript
+chrome.pageAction.onClicked.addListener()
+        ```
+
+        Comme le code est compliqué, examinons-le de plus près :
+
+        - chrome est le navigateur<!-- .element: class="delayed" -->
+        - pageAction est le bouton \(Vous souvenez-vous de pageAction dans le fichier « manifest »? Il réfère à ce code.\)<!-- .element: class="delayed" -->
+        - onClicked est l'attente : « N'exécutez pas le script tout de suite; attendez d'avoir cliqué sur le bouton! »<!-- .element: class="delayed" -->
+        - addListener est la commande : « Au moment de cliquer, voici l'action à poser : [...] »<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ajouter une action au bouton
+
+        Comme vous l'avez constaté, le code est très long. Voici l'autre partie :
+
+        ```javascript
+function() {}
+        ```
+        En résumé, une fonction est une commande, ou une série de commandes, à exécuter au besoin. Ce code s'insère entre les parenthèses de l'étape précédente, puisqu'il s'agit du code exécuté au moment où nous appuyons sur le bouton.
+
+        Mises ensemble, les deux parties ressemblent à ceci :
+
+        ```javascript
+chrome.pageAction.onClicked.addListener( function() {} );
+        ```
+
+        Nous nous concentrerons maintenant sur la partie entre les accolades  {}.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ajouter des fonctionnalités au script
+
+        Ici, nous utiliserons l'autorisation pour l'onglet actif (active tab) qui se trouvait dans le « manifest ».
+
+        ```javascript
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs) { } )
+        ```
+
+        D'abord, Chrome cherche la fenêtre ouverte, puis l'onglet actif en ce moment.
+
+        Quand il trouve l'onglet actif, il peut exécuter du code à l'intérieur (une autre fonction).
+
+        Ces fonctions sont considérées comme « imbriquées », car elles dépendent les unes des autres et se trouvent à l'intérieur d'autres fonctions. Vous constaterez qu'elles sont aussi difficiles à lire. <!-- .element: class="delayed" -->
+
+        Votre fichier script, avec toutes les parties, devrait ressembler à ceci : <!-- .element: class="delayed" -->
+
+        ```javascript
+chrome.pageAction.onClicked.addListener( function() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) { } )
+});
+        ```
+        <!-- .element: class="delayed" -->
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ajouter une fonctionnalité au script
+
+        Nous allons encore plus loin dans la matrice.
+
+        Respirons profondément.
+
+        C'est parti.
+
+        Ajoutez ce code à l'intérieur des dernières accolades ( {} ) :
+
+        ```javascript
+chrome.tabs.executeScript(
+  tabs[0].id,
+  {code:  'document.body.style.backgroundColor = "green";' }
+);
+        ```
+
+        UN MOMENT! Avez-vous une idée de la signification de ce code?
+
+        Regardons-le étape par étape : <!-- .element: class="delayed" -->
+
+        * chrome est le navigateur <!-- .element: class="delayed" -->
+        * tabs est l'onglet actif que nous avons isolé dans l'étape précédente <!-- .element: class="delayed" -->
+        * code est le code que nous allons exécuter à l'intérieur de cet onglet <!-- .element: class="delayed" -->
+        * document.body... est le code JavaScript que nous enverrons dans l'onglet pour qu'il s'exécute dans la page <!-- .element: class="delayed" -->
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Commentaires
+
+        Si vous souhaitez vous laisser des commentaires dans le code, rien de plus facile : utilisez deux barres obliques « // » avant votre code.
+
+        En utilisant « // », vous indiquez à l'ordinateur d'ignorer cette ligne, car il s'agit d'un commentaire.
+
+        Les commentaires ressemblent à ceci :
+
+        ```javascript
+        //Je suis un commentaire!
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Vérification
+
+        Votre fichier script.js complet devrait ressembler à ceci :
+
+        ```javascript
+chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+   chrome.declarativeContent.onPageChanged.addRules([{
+     conditions: [new chrome.declarativeContent.PageStateMatcher({
+       pageUrl: {schemes: ['https', 'http', 'localhost', 'chrome']},
+     })
+     ],
+         actions: [new chrome.declarativeContent.ShowPageAction()]
+   }]);
+ });
+
+chrome.pageAction.onClicked.addListener(function() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.executeScript(
+      tabs[0].id,
+      {code:  'document.body.style.backgroundColor = "green";' }
+    );
+  });
+});
+      ```
+
+      </script>
+    </section>
+
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Tout ça, pour...
+
+        ![](framework/img/workshop/unimpressed.gif)
+
+        Toutes les étapes que nous avons accomplies nous ont permis d'exécuter une seule ligne de JavaScript sur la page dans notre onglet actif :
+
+        ```javascript
+        document.body.style.backgroundColor = "green";
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Essayez-le avec votre voisine
+
+        Chargez des pages différentes, cliquez le bouton que vous avez créé, regardez la couleur de l'arrière-plan changer, etc.
+
+        Vous constaterez que les pages web se comportent de façon différente lorsque votre extension est activée. Essayez l'extension sur un site de nouvelles, un profil Twitter ou sur Google, par exemple.
+
+        ----
+
+        ##Remarque
+
+        Si vous travaillez hors ligne ou que la connexion Internet est lente, il est possible de charger les fichiers « index.html » (des dossiers horsligne1 et horsligne2) dans Chrome. L'extension fonctionnera aussi sur ces pages.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Un potentiel infini
+
+        Ce n'est qu'une seule façon de modifier les pages.
+
+        Maintenant que le bouton est prêt, vous pouvez lui demander de modifier ces pages à votre goût.
+
+        Vous avez le contrôle absolu.
+
+        ![](framework/img/workshop/hack.gif)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Se simplifier la vie
+
+        Quand nous avons beaucoup de code, comme en ce moment, il est nécessaire de bien le structurer afin de faciliter notre travail de construction.
+
+        Jusqu'à maintenant, nous avons structuré notre code afin que l'extension :
+
+        * soit définie dans la liste d'extensions avec son propre titre et une description<!-- .element: class="delayed" -->
+        * ait la permission de trouver et de gérer les onglets<!-- .element: class="delayed" -->
+        * ait un bouton avec une icône<!-- .element: class="delayed" -->
+        * exécute un fichier script de notre choix quand le bouton est cliqué   <!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Question d'éthique
+
+        Il est temps de nous poser quelques questions d'éthique :
+
+        * Grâce à notre extension, nous avons le pouvoir d'exécuter des scripts sur l'ordinateur de quelqu'un d'autre. Quelle est notre responsabilité à l'égard des utilisateurs? <!-- .element: class="delayed" -->
+        * Quand les utilisateurs nous permettent de gérer leurs onglets, ceux-ci nous font confiance. Que nous donnent-ils l'autorisation de faire?<!-- .element: class="delayed" -->
+        * Quelles données avons-nous le droit de collecter? Quelles données ne devrions-nous PAS collecter? <!-- .element: class="delayed" -->
+        * N'oubliez pas que les utilisateurs nous permettent d'accéder à une partie de leur vie. Ainsi, nous avons la responsabilité de ne pas leur nuire. <!-- .element: class="delayed" -->
+
+        Vous voyez que la création de code soulève plusieurs questions d'éthique qui sont très intéressantes. Il est important de se poser ces questions en créant des projets. <!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Un peu d'histoire
+
+        Comme nous passerons tout l'après-midi à modifier des pages web, essayons d'abord de comprendre comment ces pages sont construites.
+
+        La réponse est simple : en HTML.
+
+        Tout revient au HTML.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Un peu d'histoire
+
+        Il y a trois langages de programmation principaux sur Internet (en excluant les chats!) :
+
+        * Le HTML : le contenu brut d'une page web, y compris le texte, les photos et les liens
+        * Le CSS : ce à quoi une page web ressemble, y compris le style, la conception et l'apparence
+        * Le JavaScript : la personnalité d'une page web, c'est-à-dire, son comportement et son interactivité
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #La base du HTML
+
+        Le HTML est composé de balises.
+
+        Les balises viennent habituellement en paire. Une balise d'ouverture et une balise de fermeture *enveloppent* le contenu. À noter que la balise de fermeture comprend une barre oblique (`/`).
+
+        ```
+        <tag> balise d'ouverture --- balise de fermeture </tag>
+        ```
+
+        Les *balises* HTML décrivent le contenu qui se trouve à l'intérieur afin que le navigateur puisse le comprendre.
+                ```
+        <h1>Cette balise sert à créer un en-tête.</h1>
+        <p>Cette balise sert à créer un paragraphe.</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Balises imbriquées
+
+        Les balises peuvent être *imbriquées* à l'intérieur d'autres balises, comme dans l'exemple suivant :
+
+        ```
+        <baliseexterne>contenu externe <baliseinterne>contenu interne</baliseinterne> contenu externe</baliseexterne>
+        ```
+
+        Les balises imbriquées ont une hiérarchie, comme un arbre généalogique. Ainsi, on les appelle des noeuds *parents* et des noeuds *enfants*.
+
+        La balise interne est l'enfant de la balise externe.
+
+        ```
+        <parent>
+          <enfant></enfant>
+        </parent>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs
+
+        Les attributs....
+
+        * offrent des informations ou des consignes supplémentaires concernant l'élément
+        * se trouvent à *l'intérieur de la balise HTML d'ouverture*
+        * suivent la syntaxe suivante (attention aux guillemets) : `attribut="valeur"`
+        * sont nombreux et variés
+
+        ```
+        <tag attribute="value">contenu</tag>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs des images
+
+        Les images, les éléments sur lesquels nous allons nous concentrer aujourd'hui, ont un attribut très important.
+
+        En effet, l'attribut `src` est utilisé pour déterminer l'image à charger sur la page.
+
+        ```
+        <img src="images/picture.jpg" alt="Description de l'image">
+        ```
+
+        La balise ```img``` ne peut rien faire par elle-même. Il est essentiel de lui indiquer quel fichier d'image à charger afin qu'elle puisse avoir un effet.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Puis, la suite?
+
+        Retournons à notre extension dans notre beau fichier script.js.
+
+        Nous voulons nous amuser avec notre extension. Bien entendu, notre tâche ne sera pas facile s'il faut écrire chaque ligne de code entre des guillemets.
+
+        Trouvons une meilleure solution pour nous simplifier la vie.
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Lire à partir d'un fichier
+
+        Dans le fichier script, plutôt que d'utiliser cette ligne :
+
+        ```javascript
+        code: 'document.body.style....'
+        ```
+
+        Utilisez celle-ci :
+
+        ```javascript
+        file: 'main.js'
+        ```
+
+        Oui, vous avez bien compris. Plutôt que de toujours écrire du code dans les fonctions, il est possible d'exécuter du code dans un fichier (file) séparé.
+
+        C'est ce que nous ferons.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Créer un nouveau fichier
+
+        Créez un nouveau fichier et nommez-le main.js.
+
+        À l'intérieur du fichier, écrivez la même ligne qu'avant.
+
+        ```javascript
+        document.body.style.backgroundColor = "green";
+        ```
+
+        Si vous sauvegardez tout et mettez à jour l'extension, elle fera le même chose qu'avant. Toutefois, le fichier sera plus propre et facile à lire.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Trois fichiers
+
+        Nous avons trois fichiers maintenant, c'est-à-dire le « manifest », script.js et main.js. Ils font tous référence les uns aux autres : le premier fait référence au deuxième, qui fait référence au troisième de son côté.
+
+        Manifest --> script.js --> main.js
+
+        Le « manifest » dit au navigateur d'obéir aux consignes de script.js.
+
+        Script.js dit au navigateur d'activer le bouton de l'extension, mais de ne rien faire tant que le bouton n'est pas pressé. Dès qu'il est pressé, il exécutera tout ce qui se trouve dans main.js.
+
+        Main.js dit à la page actuelle de prendre une couleur verte.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown >
+      <script type="text/template">
+        #Un peu de plaisir
+
+        Amusons-nous en modifiant la page. Tout d'abord, pour ce faire, nous abandonnerons le fichier « manifest » et le fichier script.js pour nous concentrer sur le fichier main.js.
+
+        Plutôt que de seulement changer la couleur d'arrière-plan, changeons aussi l'orientation de la page.
+
+        ```javascript
+        document.body.style = "transition: 5s; transform: rotate(5deg);";
+        ```
+
+        Mettez à jour l'extension et essayez-la.
+
+        Changez le temps de transition et l'angle de rotation pour voir l'effet sur la page.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown >
+      <script type="text/template">
+        #Rappel
+
+        Les espaces dans le code n'ont aucune influence. Nous en mettons beaucoup pour faciliter la lecture du code, mais vous n'aurez aucun problème si vous décidez d'en enlever.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice en équipe (10 minutes)
+
+        ![](framework/img/workshop/corgis.gif)
+
+        En équipe de deux, prenez le temps de décider des éléments à changer sur la page en utilisant ces autres règles de style :
+
+        Pourquoi ne pas changer <a href="https://developer.mozilla.org/fr/docs/Web/CSS/font-size">la grosseur de police</a>?
+
+        Changer <a href="https://developer.mozilla.org/fr/docs/Web/CSS/color">les couleurs</a>?
+
+        Changer <a href="https://developer.mozilla.org/fr/docs/Web/CSS/transform">l'orientation et l'angle</a>?
+
+        ----
+
+        ##Indice :
+
+        Les propriétés de style dont nous aurons besoin sont "font-size" (grosseur de la police), "color" (couleur de la police), "background-color" (couleur de l'arrière-plan) et "transform". La dernière propriété est moins évidente que les autres.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Tout est du JavaScript
+
+        Le code que nous utilisons dans nos fichiers .js est du JavaScript. Il s'agit du langage de programmation principal sur Internet, car il ajoute de l'interactivité aux pages.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Qu'est-ce que le JavaScript?
+
+        * Un langage qui change le *comportement* des documents HTML.
+        * Il sert à animer, à cacher ou à afficher des éléments.
+        * Il réagit aux interactions de l'utilisateur.
+        * Il peut traiter des données et bien d'autres choses!
+
+        Voici à quoi ressemble le JavaScript :
+
+        ```
+        var maVariable = "Hello World";
+        function direBonjour(){
+          alert(maVariable);
+        }
+        direBonjour();
+        ```
+      </script>
+    </section>
+
+    <section class="slide highlight" data-markdown>
+      <script type="text/template">
+        # Le JavaScript, un langage de programmation
+
+        Puisque le JavaScript est un langage de programmation, sa structure et sa syntaxe sont plus complexes que celles du HTML ou du CSS.
+
+        Il y a de nombreux blocs de construction de base en programmation, y compris les *variables*, les *fonctions*, les *objets* ou les structures de commande comme les expressions conditionnelles (*if*) ou les *boucles*.
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Variables en JavaScript
+
+        Les variables existent dans presque tous les langages de programmation.
+
+        Elles sont comme des boîtes :
+
+        * Elles peuvent *stocker* des valeurs.
+        * Elles peuvent être utilisées en tout temps, au besoin.
+        * Elles donnent un *nom* à une *valeur*.
+
+        Une variable est un emplacement de mémoire nommé contenant de l'information à laquelle il est possible de faire appel plus tard.
+
+        Par exemple, nous pouvons utiliser une variable pour stocker l'adresse courriel d'un client. Ensuite, cette variable peut être utilisée pour envoyer un courriel de confirmation.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Déclarer (créer) une variable
+
+        * utilisez le mot-clé `var`
+        * nommez la variable à votre goût*
+        * complétez la commande avec un point-virgule (`;`)
+
+        ```javascript
+        var maVariable = "Allô!";
+        ```
+
+        La valeur `Allô` est attribuée au nom `maVariable` et déclarée avec le mot-clé `var`. La valeur est donc *assignée* à la *variable*.
+
+        Évaluez tout ce qui se trouve à droite du symbole « égale », puis assignez la valeur à la variable à gauche du symbole « égale ».
+
+        *Voir la diapositive suivante pour connaître les conventions de nom de variable. <!-- .element: class="note" -->
+      </script>
+    </section>
+
+    <section class="slide nested-list" data-markdown>
+      <script type="text/template">
+        #Variables : conventions de nom
+
+        * Ne doit pas contenir d'espaces :
+          * séparez les différents mots par des majuscules plutôt que par des espaces (« camelCase »)
+          * la lettre de chaque nouveau mot prend une majuscule
+          * le nom devrait ressembler à des bosses de chameau, d'où « camelCase » (p. ex. : `nomDeVariable`)
+        * Ne peut pas contenir de symboles réservés :
+          * symboles mathématiques (+, -, =, etc.)
+          * symboles utilisés en JavaScript ({, }, :, etc.)
+        * Ne peut pas commencer par :
+          * un chiffre (0 - 9)
+        * Le JavaScript est sensible à la casse
+          * les noms de variables sont donc aussi sensibles à la casse
+        * Il est recommandé d'utiliser un nom descriptif :
+        `var monPrénom;` ← Évident.<br>
+        `var mp;`        ← Moins évident.<br>
+        `var x; `        ← Pas évident du tout.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Types de variables : chaînes
+
+        Pour stocker des valeurs textuelles, comme des mots ou des phrases, nous utilisons une variable de type *chaîne*.
+
+        Les chaînes sont comprises entre guillemets.
+
+        ```javascript
+        var salutation = "Allô!";
+        ```
+
+        ```javascript
+        var salutation = "Bonjour!";
+        ```
+
+        ```javascript
+        var salutation = "Bonsoir!";
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Types de variables : chaînes et concaténation
+
+        Il est possible d'*enchaîner* des chaînes pour joindre plusieurs valeurs. Ce procédé s'appelle la **concaténation**.
+
+        ```javascript
+        var salutation = "Bon";
+        var salutationTemps = "jour";
+        var salutationComplète = salutation + salutationTemps + "!";
+        ```
+
+        Le JavaScript ci-dessous fait la **concaténation** des trois éléments, comme ceci :
+
+        ```
+        var salutationComplète = salutation + salutationTemps + "!";
+        var salutationComplète = Bon + jour + point d'exclamation
+        var salutationComplète = Bonjour!
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # De retour à l'extension
+
+        Retournons à notre extension. Cette fois-ci, nous allons utiliser les outils du JavaScript pour regarder et modifier une page.
+
+        En haut du script main.js, ajoutez cette ligne :
+
+        ```javascript
+        var toutesLesImages = document.getElementsByTagName('img');
+        ```
+
+        Cette ligne crée une variable qui stockera une liste de toutes les images sur une page, que nous pouvons regarder individuellement dans la « console ».
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # La console
+
+        * outil interactif dans le navigateur
+        * sert à entrer des commandes et à interagir directement avec une page web
+        * affiche un diagnostic et vérifie les erreurs
+
+        La console ressemble à ceci dans Chrome :
+        ![La console](framework/img/workshop/the_console_x_fr.jpg)
+
+        **Important!** Le symbole `>` bleu représente un espace où entrer des données. Il est donc inutile de taper le symbole soi-même avant chaque entrée.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Accéder à la console
+
+        Il est possible d'ouvrir la console sur _toutes_ les pages HTML. Dans Chrome, il y a différentes façons d'ouvrir l'onglet Console.
+
+        1. Avec un raccourci de clavier :
+        `COMMANDE + OPTION + J` (MAC)  / `CTRL + MAJ + J` (WINDOWS)
+
+        OU
+
+        2. En sélectionnant `Plus d'outils > Outils de développement > Console`.
+
+        Ouvrez la console dans cette diapositive. Prenez un instant pour vous exercer à ouvrir et à fermer la console jusqu'à ce que vous soyez à l'aise avec la procédure.
+
+        ---
+
+        ###Conseil de pro!
+        La console affiche aussi les erreurs sur la page actuelle. Par conséquent, si vous ouvrez la console sur une page, la console affichera *peut-être* quelques erreurs.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Utiliser la console
+
+        Dans le fichier main.js, nous ajouterons de nouvelles images dans la console pour voir leur fonction et leur emplacement. Pour ce faire, nous ajouterons le code suivant :
+
+        ```javascript
+        var toutesLesImages = document.getElementsByTagName('img');
+        console.log(toutesLesImages);
+        ```
+
+        Maintenant, mettez à jour l'extension et exécutez-la. Vous verrez qu'un nouvel élément a été injecté dans la console : une liste de toutes les images sur la page. Mettez votre souris sur chaque image dans la liste pour voir où elle se trouve sur la page.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Et puis?
+
+        Le JavaScript utilise beaucoup de points. Par exemple, les lignes comme ```document.getElementsByTagName``` et ```console.log``` ont des points à des endroits un peu bizarres.
+
+        Il y a un truc pour mieux comprendre la fonction des éléments : dites « et puis? » à chaque point. Par exemple :
+
+        (aller au ) document.
+
+        Et puis?
+
+        Get Elements By Tag Name (obtenir des éléments selon le nom de la balise)
+
+        Et puis?
+
+        Aller dans la console.
+
+        Et puis?
+
+        Log (enregistrer les éléments, log = enregistrer)
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice (5 minutes)
+
+        Explorez les fonctions de la console et cherchez comment obtenir des éléments de la page, comme des balises h1, des images et des paragraphes.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        # Chatons, chiots et ours!
+
+        Généralement, les images sur les pages web ne sont pas si mal que ça. Par contre, il y a une façon de les rendre encore plus adorables.
+
+        Choisissez votre animal préféré parmi les suivants. Les photos des sites web seront remplacées par des photos de l'animal de votre choix. Aimez-vous mieux...
+
+        <a href="https://placekitten.com/">les chatons</a>?
+
+        <a href="https://placedog.net/">les chiots</a>?
+
+        <a href="https://placebear.com/">les ours</a>?
+
+        <a href="http://fillmurray.com">...ou Bill Murray</a>?
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Images
+
+        Les images sont fantastiques. Dans le monde fou du HTML, celles ressemblent à ceci :
+
+        ```
+        <img alt="" src="http://placekitten.com/100/100">
+        ```
+
+        Contrairement à de nombreuses balises, les balises ```img``` n'ont pas de balise de fermeture ```</img>```.
+
+        Le src= indique la source (l'attribut); il fait le lien entre la balise d'image au fichier de l'image.
+
+        Ce lien peut être modifié au besoin.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Cha-cha-changement!
+
+        Il y a une fonction en JavaScript qui nous permet de changer l'attribut d'un élément HTML sur la page.
+
+        Son nom, setAttribute, signifie « définir l'attribut ». En voici un exemple :
+
+        ```javascript
+        image.setAttribute('src', 'http://placekitten.com/200/300')
+        ```
+
+        Nous avons un problème : il y a beaucoup d'images sur la page. Quelle image souhaitons-nous changer en particulier?
+
+        ...Pourquoi ne changerions-nous pas toutes les images?
+
+        ----
+
+        ##Remarque
+
+         Si vous êtes hors ligne, ou si la connexion Internet est lente, nous avons préparé un ensemble d'images déjà téléchargées que vous trouverez dans le dossier imagesHorsligne. Afin d'obtenir l'URL des images, déplacez-les dans un onglet vide de Chrome et utilisez les adresses URL à la place du lien placekitten.com.
+
+        Le lien des images hors ligne ressemblera à ceci :
+
+        ```
+        file:///Users/williamwolfewylie/Desktop/clc-intro-to-chrome-extensions-master-fr/imagesHorsligne/300.jpg
+        ```
+
+        Le lien n'est pas très joli, mais il fonctionne.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Boucles
+
+        Les humains ne sont pas très efficaces quand ils accomplissent des tâches répétitives et ennuyantes.
+
+        En revanche, les ordinateurs sont excellents pour accomplir des tâches répétitives, car ils utilisent des boucles.
+
+        Les boucles prennent une liste d'éléments (p. ex. : des images) et exécutent le même code pour chaque élément.
+
+        Ainsi, les boucles sont extrêmement efficaces et rapides.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Boucles
+
+        Dans notre cas, nous pouvons faire appel à une boucle qui prendra toutes les images de la page et les remplacera par l'image de notre choix.
+
+        Une boucle de ce genre ressemble à ceci :
+        ```javascript
+var toutesLesImages = document.getElementsByTagName('img');
+console.log(toutesLesImages);
+for (var i = 0; i < toutesLesImages.length; i++) {
+  console.log(toutesLesImages[i]);
+}
+        ```
+
+        En détails :
+
+        * toutesLesImages est une variable contenant une liste de toutes les images (!) sur la page.
+        * i est une variable suivant le numéro de l'image sur laquelle nous exécutons du code en ce moment. Il s'agit d'un numéro commençant par 0, au début de la liste.
+        * La variable i commence à 0, augmente de 1 à chaque image et s'arrête lorsque toutes les images de la liste ont été modifiées.
+        * À chaque image, la console enregistre (console.log!) l'image en question.
+
+      </script>
+    </section>
+
+     <section class="slide" data-markdown>
+      <script type="text/template">
+        # Boucles... en vrai
+
+        Debout tout le monde! Nous allons créer une boucle humaine.
+
+        D'abord, nous aurons besoin d'un volontaire qui viendra à l'avant pour compter.
+
+        Les autres seront les éléments répétés dans la boucle. (La répétition peut se faire par personne, par rangée ou par table.) <!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Boucles... en vrai
+
+        Compteur : indique à qui ou à quelle table le tour est venu de danser.
+
+        Le reste du groupe : attend que le compteur pointe les personnes à qui le temps est venu de danser et suit les consignes ci-dessous.
+
+        La boucle que nous faisons est l'équivalent de ce code :
+
+        ```javascript
+        var participants = toutLeMonde;
+
+        for (var i = 0; i < participants.length(); i++) {
+            participants[i].naeNae;
+            participants[i].mainsEnLair;
+            participants[i].vogue;
+        }
+        ```
+
+        ...et c'est parti! <!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Boucles... en vrai
+
+        Vous avez vu? Le compteur a exécuté les fonctions de façon identique sur tout le monde dans le groupe. Nous avons fait une boucle!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Boucles
+
+        Dans le code, les boucles sont difficiles à lire. En effet, les boucles ont beaucoup de signes de ponctuation et d'accolades, sans compter qu'elles sont écrites un peu étrangement. Ne vous inquiétez pas, car il y a un truc pour mieux les comprendre.
+
+        Chaque fois que vous voyez :
+
+        ```javascript
+        toutesLesImages[i]
+        ```
+
+        Il s'agit d'une des images sur la page, l'image qui nous importe actuellement, que nous allons changer et que le compteur sélectionne en ce moment.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Quelques détails à propos des boucles
+
+        1. Il y a un raccourci : tapez « for » dans l'éditeur Atom, puis appuyez sur « tab » pour créer une boucle automatiquement. Pratique, non?
+
+        2. Parfois, vous aurez plus d'une boucle dans le script. Dans ce cas-ci, il vaut mieux ne pas utiliser la même variable de comptage pour les deux, car il pourrait y avoir de la confusion. Dans notre exemple, « i » est le nom de la variable de comptage. Bien que vous puissiez utiliser le nom de variable de votre choix, il est déconseillé d'utiliser la même variable pour deux fonctions différentes.
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Replacer les images
+
+        Maintenant que nous avons la variable toutesLesImages[i], qui représente l'image que nous souhaitons changer, nous ajouterons cette ligne de JavaScript dans notre boucle :
+
+        ```javascript
+        toutesLesImages[i].setAttribute('src', 'http://placekitten.com/200/300');
+        ```
+
+        Ce code prendra l'attribut src de l'image et remplacera ce qui s'y trouve par un lien placekitten.
+
+        Essayez-le! Chargez une page et placez-y des chatons (ou des chiots, des ours, Bill Murray, etc.)
+
+        ----
+
+        ##Remarque
+
+        Si vous êtes hors ligne, ou si la connexion Internet est lente, vous devriez utiliser le lien local faisant référence au chemin vers l'emplacement de l'image sur votre ordinateur. Ce lien ressemble un peu à ceci :
+
+        ```
+        file:///Users/williamwolfewylie/Desktop/clc-intro-to-chrome-extensions-master-fr/imagesHorsligne/300.jpg
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Images aux tailles différentes
+
+        Les liens d'images de remplacement contiennent tous /200/300. Ces numéros définissent la largeur et la hauteur de l'image que vous mettrez sur la page.
+
+        Plutôt que de remplacer les images par la même image de 200x300, utilisez une image de la bonne taille.
+
+        Pour y parvenir, nous avons besoin de savoir quelle était la taille de l'image qui se trouvait à cet emplacement.
+
+        ```javascript
+var imageHauteur = toutesLesImages[i].clientHeight;
+var imageLargeur = toutesLesImages[i].clientWidth;
+        ```
+        Ces deux lignes créent deux nouvelles variables et font appel aux attributs clientHeight et clientWidth pour enregistrer la taille des images originales.
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Images aux tailles différentes
+
+        Maintenant, nous mettrons ensemble les nouvelles valeurs de hauteur et de largeur dans le lien de l'image de remplacement.
+
+        ```javascript
+toutesLesImages[i].setAttribute('src', 'http://placekitten.com/' + imageLargeur + '/' + imageHauteur)
+
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Images aux tailles différentes
+
+        Voici ce à quoi la boucle devrait ressembler (approximativement) :
+
+        ```javascript
+var toutesLesImages = document.getElementsByTagName('img');
+
+for (var i = 0; i < toutesLesImages.length; i++) {
+  var imageHauteur = toutesLesImages[i].clientHeight;
+  var imageLargeur = toutesLesImages[i].clientWidth;
+  toutesLesImages[i].setAttribute('src', 'http://placekitten.com/' + imageLargeur + '/' + imageHauteur)
+}
+        ```
+
+        ----
+
+        ##Remarque
+
+        Si vous utilisez le mode hors ligne, il vous sera impossible d'utiliser les attributs de largeur et de hauteur (clientWidth et clientHeight) pour trouver la meilleure image à utiliser sur la page. Toutefois, il est possible de choisir une image aléatoirement parmi les images disponibles.
+
+        La première variable, lienBase, devrait correspondre à la première partie du lien du navigateur (pas identique au lien ci-dessous). Ce code va à l'intérieur de la boucle « for ».
+
+        ```
+        var lienBase = "file:///Users/williamwolfewylie/Desktop/clc-intro-to-chrome-extensions-master-fr/imagesHorsligne/";
+        var choixImages = ['100.jpg', '200.jpg', '300.jpg', '400.jpg', '500.jpg'];
+        var photoInsérer = choixImages[Math.floor(Math.random() * choixImages.length)];
+        toutesLesImages[i].setAttribute('src', lienBase + photoInsérer);
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Une touche de folie
+
+        Pourquoi ne nous amuserions-nous pas un peu? Faisons tourner la page quand le bouton est pressé afin d'ajouter un super effet de transition.
+
+        ```javascript
+document.body.style = "transition: 2s; transform: rotate(1080deg);";
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Prolongement
+
+        Avez-vous fini plus tôt? Peut-être cherchez-vous des exercices supplémentaires?
+
+        (Vous pouvez aussi <a href="#slide100">sauter cette partie</a> pour terminer l'atelier.)
+
+        ![](framework/img/workshop/stretch.gif)
+
+        Allons-y!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Proloooooongement
+
+        Plutôt que d'appliquer les transitions à toute la page, choisissons les images qui recevront un coup de baguette magique.
+
+        Nous ajouterons cette nouvelle fonction à notre extension.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Détecteurs d'événements
+
+        Les événements sont très courants en développement web. Ils représentent la façon qu'un navigateur web interprète ce qui se passe quand un utilisateur clique sur un élément avec sa souris, fait défiler la page ou met son pointeur sur une image sur la page ou quand la page finit de charger. Il y a des centaines d'événements se déroulant dans un navigateur web chaque seconde.
+
+        Les *détecteurs* d'événements sont du code suivant tous ces événements. Ils nous seront très utiles.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Détecteurs d'événements
+
+        Les détecteurs d'événements sont habituellement liés aux éléments déjà présents sur la page pour dire à l'élément (p. ex. : une image) comment se comporter après une action de l'utilisateur (p. ex. : un clic). Dans ce cas-ci, le détecteur d'événements est lié à une image.
+
+        Heureusement, nous avons déjà créé du code pour rassembler les images dans notre extension avec cette ligne :
+
+        ```javascript
+        var toutesLesImages = document.getElementsByTagName('img');
+        ```
+
+        De plus, nous avons cette ligne dans la boucle d'images :
+
+        ```javascript
+        var thisimageHauteur = toutesLesImages[i].clientHeight;
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Détecteurs d'événements
+
+        Rappelez-vous que ```toutesLesImages[i]``` désigne une image en particulier dans la boucle.
+
+        Plutôt que de la remplacer par la nouvelle photo instantanément, nous pouvons lui indiquer d'attendre que l'utilisateur la clique avant de changer.
+
+        ```javascript
+        toutesLesImages[i].addEventListener('click', function() {
+          console.log(this)
+        })
+        ```
+
+        Voyons chaque partie en détails :
+
+        - ```toutesLesImages[i]``` est une image en particulier sur la page.
+        - ```addEventListener``` dit à l'image de surveiller un événement.
+        - ```'click'``` lui dit quel événement surveiller, c'est-à-dire, un clic.
+        - ```function() {}``` représente ce qui se passe quand quelqu'un clique sur l'image. Le code à exécuter quand l'utilisateur clique l'image va entre les accolades.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Un instant, qu'est-ce que c'est?
+
+        ```javascript
+          console.log(this)
+        ```
+
+        Bizarre, non?
+
+        Le mot ```this``` réfère à l'élément cliqué. Sur quoi avons-nous cliqué? Ceci, ou « this »! Nous avons cliqué sur ceci, et nous l'enregistrons (log) dans la console. En d'autres mots, nous console.log()-gons l'élément.
+
+        En effet, il peut sembler étrange d'avoir le mot « this » tout seul, mais détrompez-vous : il s'agit d'un outil indispensable dans notre coffre à outils.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Détecteurs d'événements
+
+        En ce moment, notre code devrait ressembler à ceci :
+
+        ```javascript
+        for (var i = 0; i < toutesLesImages.length; i++) {
+            toutesLesImages[i].addEventListener('click', function() {
+            console.log(this)
+          })
+        }
+        ```
+
+        Notre ```this``` peut être utilisé comme dans l'exercice précédent.
+
+        ```
+        var thisimageHauteur = this.clientHeight;
+        var thisimageLargeur = this.clientWidth;
+        var imageLien = "http://placekitten.com/" + thisimageLargeur + "/" + thisimageHauteur;
+        this.setAttribute('src', imageLien);
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Prolongement
+
+        Après avoir rassemblé toutes les parties, le code pour remplacer des images avec un clic aura l'air de ceci :
+
+        ```javascript
+        for (var i = 0; i < toutesLesImages.length; i++) {
+          toutesLesImages[i].addEventListener('click', function() {
+            var thisimageHauteur = this.clientHeight;
+            var thisimageLargeur = this.clientWidth;
+            var imageLien = "http://placekitten.com/" + thisimageLargeur + "/" + thisimageHauteur;
+            this.setAttribute('src', imageLien);
+          })
+        }
+        ```
+
+        MAGIE!
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Prolongement n°2 : L'incroyable élément invisible
+
+        ![](framework/img/workshop/drop.gif)
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Prolongement : rappel
+
+        Maintenant que nous savons comment toucher des éléments individuels sur la page, amusons-nous avec ```this``` de différentes manières.
+
+        Pourquoi ne pas faire disparaître des éléments avec « this »?
+
+        Prenez cinq minutes pour trouver deux façons différentes de faire disparaître un élément de la page.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Prolongement : vers la solution
+
+        D'abord, nous devons sélectionner tous les éléments, texte ou image, sur la page.
+
+        ```
+        var mesÉlémentsInvisibles = document.getElementsByTagName('img');
+        ```
+
+        Remarque : Vous pourriez utiliser des balises comme ```p``` dans cet exercice. À vous le choix!
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Prolongement : vers la solution
+
+        Faites une boucle et ajoutez un détecteur d'événements, comme dans l'exercice précédent.
+
+        ```
+        for (var i = 0; i < mesÉlémentsInvisibles.length; i++) {
+          mesÉlémentsInvisibles[i].addEventListener('click', function() {
+
+          })
+        }
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Prolongement : vers la solution
+
+        À ce point-ci, il y a différentes façons de procéder pour accomplir la tâche.
+
+        L'un des aspects les plus intéressants du code est le nombre infini de solutions à un problème. N'oubliez pas : la bonne solution est celle qui a le plus de sens, selon vous.
+
+        Pour résoudre le problème, vous avez le choix entre cacher l'élément ou l'effacer complètement de la page.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Cacher l'élément
+
+        Ici, nous souhaitons cacher l'élément pour le rendre invisible. C'est une question de style. Encore une fois, il y a deux façons de procéder :
+
+        - En réduisant l'opacité de l'élément
+        - En changeant sa visibilité à « caché »
+
+        Option 1 :
+        ```
+        this.setAttribute('style', 'opacity: 0')
+        ```
+
+        Option 2 :
+        ```
+        this.setAttribute('style', 'visibility: hidden')
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Effacer l'élément de la page
+
+        Vous devez savoir qu'effacer un élément d'une page est une action permanente. Lorsque nous cachons un élément, il est facile de revenir en arrière, mais retrouver un élément effacé est une autre paire de manches.
+
+        En revanche, il est beaucoup plus facile d'effacer un élément que de le cacher :
+
+        ```
+        this.remove()
+        ```
+
+        Pouf. Fini.
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Prolongement : réussi!
+
+        ![](framework/img/workshop/big_stretch.gif)
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Démonstration
+
+        Qui souhaiterait présenter sa propre extension des plus originales et splendides au reste du groupe?
+
+        ![](framework/img/workshop/sponge.gif)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Aujourd'hui...
+
+        Nous avons appris énormément de notions :
+
+        * installation et activation des extensions de navigateur
+        * à quoi ressemble le JavaScript et comment le personnaliser
+        * attributs HTML
+        * images de remplacement
+        * éthique de l'exécution de code sur les appareils des utilisateurs
+
+        <p>De plus, nous pouvons utiliser ce que nous avons appris aujourd'hui pour créer une extension amusante, comme <a href="http://nthitz.github.io/turndownforwhatjs/">Turn Down For What</a>, ou pratique, comme <a href="https://chrome.google.com/webstore/detail/zoom-text-only/jamhfhbppcmkgghlkeieococonlbppjg">Zoom Text Only.</a></p><!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Félicitations!
+
+        ![](framework/img/workshop/done.gif)
+      </script>
+    </section>
+
+
+    <section class="slide" data-toc>
+      <h1>Ressources supplémentaires</h1>
+
+      <p>Voici quelques liens supplémentaires qui pourraient vous donner un coup de pouce pour la suite des choses :</p>
+
+      <ul>
+        <li>
+          <a href="https://developer.chrome.com/webstore/publish">Publier une extension sur le Chrome Web Store</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension">Rendre son extension compatible avec Firefox (indice : elle l'est déjà)</a>
+        </li>
+        <li>
+          <a href="https://developer.chrome.com/extensions/getstarted">Un peu plus complexe : créer une extension Chrome dotée de sa propre interface utilisateur</a>
+        </li>
+        <li>
+          <a href="https://www.tomsguide.com/us/pictures-story/283-best-google-chrome-extensions.html">Inspiration : les meilleures extensions Chrome de l'année 2018</a>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>Création d'extensions de navigateur<br></span>
+      </h2>
+
+      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <h2><span class="cursive">avec</span> nom de la formatrice</h2>
+      <ul>
+        <li><a href="mailto:">allo@courriel.com</a></li>
+        <li><a href="#">monsite.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <p class="attribution">Diapositives créées par <a href="http://christinatruong.com">Christina Truong</a> à partir de <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> et de <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
