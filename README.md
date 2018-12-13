@@ -5,11 +5,11 @@ Un atelier d'une journée où les apprenantes créeront une extension en JavaScr
 
 ## Liens rapides
 
-Notes de la formatrice : <a href="https://ladieslearningcode.github.io/llc-intro-to-browser-extensions-fr/notes-fr.html">ladieslearningcode.github.io/llc-intro-to-browser-extensions-fr/notes-fr.html</a>
+Notes de la formatrice : <a href="https://ladieslearningcode.github.io/teenslc-intro-to-browser-extensions-fr/notes-fr.html">ladieslearningcode.github.io/teenslc-intro-to-browser-extensions-fr/notes-fr.html</a>
 
-Aperçu des diapositives : <a href="https://ladieslearningcode.github.io/llc-intro-to-browser-extensions-fr/diapositives.html">ladieslearningcode.github.io/llc-intro-to-browser-extensions-fr/diapositives.html</a>
+Aperçu des diapositives : <a href="https://ladieslearningcode.github.io/teenslc-intro-to-browser-extensions-fr/diapositives.html">ladieslearningcode.github.io/teenslc-intro-to-browser-extensions-fr/diapositives.html</a>
 
-Préparation des mentors (le matin de l'atelier, rencontre animée par la formatrice) <a href="https://ladieslearningcode.github.io/llc-intro-to-browser-extensions-fr/préparation-mentors.txt">ladieslearningcode.github.io/llc-intro-to-browser-extensions-fr/préparation-mentors.txt</a>
+Préparation des mentors (le matin de l'atelier, rencontre animée par la formatrice) <a href="https://ladieslearningcode.github.io/teenslc-intro-to-browser-extensions-fr/préparation-mentors.txt">ladieslearningcode.github.io/teenslc-intro-to-browser-extensions-fr/préparation-mentors.txt</a>
 
 ## Description
 
