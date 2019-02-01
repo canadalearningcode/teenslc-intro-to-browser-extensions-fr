@@ -1,3 +1,12 @@
+# Ce contenu fait partie d'un thème mensuel!
+
+En 2019, nous souhaitons encourager toute la population du Canada à discuter, à apprendre et à réfléchir à propos de thèmes précis et à travailler sur des solutions technologiques à des problèmes qui touchent toute la planète.
+Obtenez plus d'informations sur les thèmes mensuels en [cliquant ici](https://www.canadalearningcode.ca/fr/le-code-a-le-potentiel-de-changer-le-monde/).
+
+*Le thème de février est L’ACCESSIBILITÉ*
+
+Consultez la diapositive n° 5 pour obtenir des suggestions pour intégrer le thème aux projets des apprenants, s'ils souhaitent participer au thème.
+
 ## Ladies Learning code
 ## Introduction à la création d'extensions de navigateur en JavaScript
 
